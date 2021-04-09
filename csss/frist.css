@@ -1,0 +1,1311 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-transform: capitalize;
+  /* font-family: "Fira Sans", sans-serif;
+  font-family: "Fredericka the Great", cursive;
+  font-family: "Lobster Two", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Work Sans", sans-serif; */
+  font-family: "Oswald", sans-serif;
+}
+
+li {
+  list-style: none !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title-style {
+  position: relative;
+}
+
+.title-style h2 {
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-weight: 800;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0);
+}
+
+.title-style::before {
+  content: "";
+  position: absolute;
+  bottom: 66px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #ff5200;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.title-style h2 span {
+  color: #ff5200;
+  text-indent: initial;
+  font-weight: 800;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0);
+}
+
+/* home img strat here */
+#home {
+  background: url(/images/IMG_20210308_175050.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  position: relative;
+  z-index: 1;
+}
+
+#home::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: black;
+  content: "";
+  opacity: 0.7;
+  width: 100%;
+  z-index: -1;
+}
+
+.text-1 {
+  font-size: 1.5rem;
+  line-height: 2rem !important;
+  word-spacing: 0.5rem;
+  color: crimson;
+}
+
+.text-2 {
+  font-size: 2rem;
+  line-height: 1.9rem !important;
+  word-spacing: 0.5rem;
+  color: crimson;
+}
+
+.text-3 {
+  font-size: 0.9rem;
+  line-height: 1.3rem !important;
+  word-spacing: 0.5rem;
+  font-weight: 600;
+  color: crimson;
+}
+
+.text-3 span {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 800;
+  color: #ff5200;
+  text-transform: uppercase;
+  font-family: "Lobster Two", cursive;
+}
+
+.btn {
+  color: #fff !important;
+  outline: none !important;
+  background-color: #ff5200 !important;
+  line-height: 2rem !important;
+}
+
+.btn-box {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition-delay: 900ms;
+  -moz-transition-delay: 900ms;
+  -ms-transition-delay: 900ms;
+  -o-transition-delay: 900ms;
+  transition-delay: 900ms;
+}
+
+.btn {
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(225, 19, 123);
+}
+
+.btn:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background-color: #ffffff;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  -moz-transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  -o-transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 500ms cubic-bezier(0.86, 0, 0.07, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  -moz-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  -o-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.btn {
+  position: relative;
+  transition: all 300ms ease;
+}
+
+.btn:hover {
+  position: relative;
+  padding: 10px 30px;
+  font-size: 25px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: center;
+  background-color: #f05925;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 5px;
+}
+
+.btn {
+  display: inline-block;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/*  home img ends here   */
+/*  login and sign up page strat here  */
+/*  login page strat here  */
+.form,
+.sing {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 102;
+  display: none;
+}
+
+.login-form,
+.sign-up-from {
+  width: 420px;
+  padding: 20px 10px;
+  background-color: #ffffff;
+  display: flex;
+  box-shadow: 5px 5px 12px 3px rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  position: relative;
+}
+
+.login-form form,
+.sign-up-from form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.login-form strong,
+.sign-up-from strong {
+  color: #272727;
+  font-size: 2rem;
+  margin: 2px 7px 7px 7px !important;
+  letter-spacing: 0.5px;
+}
+
+.login-form input,
+.sign-up-from input {
+  width: 90%;
+  height: 45px;
+  margin: 6px 0;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  outline: none !important;
+  border-radius: 7px;
+}
+
+.login-form input::placeholder,
+.sign-up-from input::placeholder {
+  color: rgb(114, 113, 113);
+  text-align: center;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.login-form input[type="submit"],
+.sign-up-from input[type="submit"] {
+  background-color: #0b9d8a;
+  border: none;
+  color: #ffffff;
+  outline: none;
+  text-transform: uppercase;
+  margin-top: 10px !important;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.3);
+}
+
+.log-cancel {
+  position: absolute;
+  right: 18px;
+  top: 10px;
+  color: #868686;
+  font-size: 1.2rem;
+}
+
+.btns-from,
+.signup-btns {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  word-spacing: 1px;
+}
+
+.btns-from a,
+.signup-btns a {
+  color: #555555;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* .login-form {
+  display: none;
+} */
+/* .sign-up-from {
+  display: none;
+} */
+
+.sign-up-btn {
+  border-bottom: 1px solid #868686;
+  line-height: 16px !important;
+}
+
+.login-active,
+.login-active .login-form {
+  display: flex;
+  animation: fade 0.3s;
+}
+
+.sign-up-active,
+.sign-up-active,
+.sign-up-from {
+  display: flex;
+  animation: fade 0.3s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* login page ends here  */
+
+/*  login and sign up page ends here  */
+
+/*  service section strat here  */
+#services {
+  margin-top: 20px;
+  min-height: 500px;
+  background-color: rgb(247, 235, 235);
+}
+
+.box {
+  flex-basis: 100%;
+  /* display: flex; */
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 3px 2px rgb(194, 187, 187);
+  margin: 30px;
+  overflow: hidden;
+}
+
+.box:hover {
+  box-shadow: 5px 5px 3px rgba(0, 0, 0), 10px 10px 5px 2px rgba(0, 0, 0);
+}
+
+.icon-box {
+  font-size: 3rem;
+  text-align: center;
+  color: #ff5200;
+  line-height: 5rem;
+  margin-bottom: 6px;
+}
+
+.title-box h1 {
+  color: crimson;
+  font-weight: 700;
+  text-shadow: 4px 4px 5px rgb(194, 187, 187);
+}
+
+.title-box p {
+  text-justify: auto;
+  color: #333333;
+}
+
+/* service section ends here  */
+
+/*  tutorial section strat here  */
+#tutorials {
+  margin-top: 20px;
+  min-height: 500px;
+  padding: 80px 0;
+  position: relative;
+}
+
+.card {
+  margin-top: 20px !important;
+}
+
+.card-body {
+  margin-top: 10px !important;
+}
+
+.card-title {
+  color: #ff5200;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.card-title span {
+  color: crimson;
+}
+
+.card-text {
+  font-size: 0.8rem;
+  font-weight: 500;
+  justify-content: center;
+}
+
+.card-footer a {
+  font-size: 2rem;
+  font-weight: 600;
+  transition: 3s;
+}
+
+.card-footer a:hover {
+  text-shadow: 10px 10px 5px rgb(0, 0, 0, 0.7);
+  color: #ff5200 !important;
+}
+
+/*  tutorial section ends here  */
+/*  best friends  section strat here  */
+#friends {
+  margin-top: 10px;
+  min-height: 500px;
+  /* padding: 80px 0; */
+  padding: 5% 10%;
+  position: relative;
+}
+
+.carousel-inner .active {
+  background-color: none !important;
+}
+
+#friends::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(330deg, rgb(143, 13, 13) 55%, #0b9d8a 0%);
+  z-index: -1;
+}
+
+.friends {
+  width: 180px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.carousel-item {
+  text-align: center;
+  padding: 7% 15%;
+  font-size: 1.2rem;
+}
+
+.carousel-item h4 {
+  font-size: 1.5rem !important;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.carousel-item h3 {
+  font-size: 1.2rem !important;
+  color: #0b9d8a;
+  font-style: italic;
+}
+
+.carousel-item a:hover {
+  color: #f05925;
+  text-decoration: none;
+}
+
+/*  best friends  section ends here  */
+/*  best friends gallery strat here   */
+/* Center website */
+.gallery {
+  margin-top: 10px;
+  min-height: 500px;
+
+  padding: 5% 10%;
+}
+
+.row {
+  margin-right: 2px !important;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  /* padding: 8px; */
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  /* width: 33.33%; */
+  display: none;
+  /* Hide all elements by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both !important;
+}
+
+/* Content */
+.content {
+  background-color: rgb(248, 239, 239);
+  /* padding: 5px; */
+}
+
+.content iframe {
+  max-width: 300px;
+  height: auto;
+  margin: 5px !important;
+  border-radius: 10px;
+}
+
+.content h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ff5200;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.photo-btn {
+  border: none !important;
+  outline: none !important;
+  padding: 12px 16px !important;
+  background-color: #0b9d8a !important;
+  cursor: pointer !important;
+  margin-right: 5px !important;
+  transition: 2s !important;
+  transition-property: background-color !important;
+}
+
+.photo-btn:hover {
+  background-color: rgb(143, 13, 13) !important;
+  color: #272727 !important;
+}
+
+/* #unblock {
+  background-color: #f05925 !important;
+  color: white !important;
+} */
+
+.coming-soon {
+  color: rgb(255, 0, 0);
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+#demo1,
+#demo2,
+#demo3 {
+  color: #ff5200 !important;
+}
+
+/*  best friends gallery ends here   */
+/* <!-- Fun Fact Section strat--> */
+.project-work {
+  margin-top: 10px;
+  min-height: 500px;
+  /* padding: 80px 0; */
+  padding: 5% 10%;
+  position: relative;
+}
+
+.counter i {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+/* <!-- Fun Fact Section ends--> */
+
+/* timeline section ends here  */
+/*  our pracing section strat here  */
+.pricing {
+  /* width: 100%;
+	height: 100vh;
+	padding: 50px; */
+  margin-top: 10px;
+  min-height: 500px;
+  padding: 5% 10%;
+  position: relative;
+}
+
+.pricing:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(160deg, #16c9f6 55%, #fff 0%);
+  z-index: -1;
+}
+
+.meny {
+  font-size: 40px;
+  line-height: 1;
+  color: #606060;
+  font-weight: bolder;
+}
+
+.card {
+  transition: 0.4s ease;
+}
+
+.card-header {
+  font-size: 1.6rem;
+  font-weight: bolder;
+  background: #fff !important;
+  padding: 25px 0 !important;
+}
+
+.card-body {
+  padding: 30px 0 !important;
+}
+
+.card-body li {
+  margin: 10px 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #606060;
+}
+
+.card-footer {
+  background: #fff !important;
+  padding: 30px 0 !important;
+}
+
+.card-footer a {
+  border: 1px solid #50d1c0;
+  border-radius: 100px;
+  margin: 0 5px;
+  padding: 12px 35px;
+  outline: none;
+  color: #50d1c0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+}
+
+.card:hover .card-footer a {
+  color: #fff;
+  background: #50d1c0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card:hover .card-header,
+.card:hover .meny {
+  color: #50d1c0;
+}
+
+.card-second {
+  transform: translateY(-20px);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+/*  our pracing section ends here  */
+/*  testimonials section strat here */
+
+#about-me {
+  margin-top: 10px;
+  min-height: 500px;
+  position: relative;
+  padding: 5% 10%;
+}
+
+#about-me::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    330deg,
+    #16c9f6 55%,
+    rgb(143, 13, 13) 0%
+  ) !important;
+  z-index: -1;
+}
+
+.boxss {
+  padding: 5%;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3), 10px 10px 5px rgba(0, 0, 0, 0.4),
+    15px 15px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.infor {
+  padding: 2%;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.infor i {
+  color: #ff5200;
+  font-size: 1.2rem;
+}
+
+.infor h1 {
+  color: #ff5200;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/*  testimonials section ends here  */
+/*  about section starts  */
+#about {
+  margin-top: 10px;
+  min-height: 500px;
+  padding: 5% 10%;
+}
+
+.column-left {
+  position: relative;
+  /* border: 10px solid #fff; */
+}
+
+.about-content .column-left img {
+  min-height: 384px;
+  max-width: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.column-left::before {
+  content: "";
+  position: absolute;
+  left: -17px;
+  top: -25px;
+  width: 81%;
+  border: 6px solid crimson;
+  height: 102%;
+  z-index: -1;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.column-right {
+  padding-top: 30px;
+}
+
+.column-right .text {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  line-height: 2rem;
+  color: #ff5200;
+  word-spacing: 0.5rem;
+}
+
+.column-right p {
+  font-size: 1rem;
+  font-style: normal;
+  text-align: justify;
+  word-spacing: 0.1;
+  color: #272727;
+
+}
+
+.column-right a {
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 20px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 1s ease;
+  text-transform: uppercase;
+}
+
+.column-right a:hover {
+  color: crimson;
+  background: none;
+}
+
+/*  about section ends  */
+/*  my skills section strat here  */
+#my-skill {
+  margin-top: 10px;
+  min-height: 500px;
+  padding: 5%;
+}
+
+.skills-left h1 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: crimson;
+  object-fit: cover;
+  text-align: center;
+}
+
+.my-skill {
+  padding: 5%;
+}
+
+.skills-left p {
+  font-size: 1rem;
+  font-weight: none !important;
+  color: #555555;
+  object-fit: cover;
+  text-align: justify;
+}
+
+.skills-left a {
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 20px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 1s ease;
+  text-transform: uppercase;
+}
+
+.skills-left a:hover {
+  color: crimson;
+  background: none;
+}
+
+.skills {
+  background: crimson;
+  padding: 5%;
+}
+
+.skills img {
+  width: 50px;
+  height: 50px;
+}
+
+.desc-container {
+  padding-right: 2%;
+}
+
+.desc-container li {
+  list-style: none;
+  font-weight: bold;
+  margin: 28px 10px;
+  position: relative;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 3px 3px 4px #333333;
+}
+
+.desc-container li::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 5px);
+  background-color: #868686;
+  width: 100%;
+  height: 10px;
+  left: 0;
+  border-radius: 1000px;
+}
+
+.desc-container li::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 5px);
+  background-color: #ff5200;
+  width: 100%;
+  height: 10px;
+  left: 0;
+  border-radius: 1000px;
+  animation-duration: 6s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+.desc-container li.html::after {
+  animation-name: html;
+}
+
+@keyframes html {
+  to {
+    width: 95%;
+  }
+}
+
+.desc-container li.css::after {
+  animation-name: css;
+}
+
+@keyframes css {
+  to {
+    width: 85%;
+  }
+}
+
+.desc-container li.bootstrap::after {
+  animation-name: bootstrap;
+}
+
+@keyframes bootstrap {
+  to {
+    width: 70%;
+  }
+}
+
+.desc-container li.js::after {
+  animation-name: js;
+}
+
+@keyframes js {
+  to {
+    width: 50%;
+  }
+}
+
+.desc-container li.jquery::after {
+  animation-name: jquery;
+}
+
+@keyframes jquery {
+  to {
+    width: 60%;
+  }
+}
+
+.desc-container li.node::after {
+  animation-name: node;
+}
+
+@keyframes node {
+  to {
+    width: 0%;
+  }
+}
+
+.desc-container li.express::after {
+  animation-name: express;
+}
+
+@keyframes express {
+  to {
+    width: 0%;
+  }
+}
+
+.desc-container li.git::after {
+  animation-name: git;
+}
+
+@keyframes git {
+  to {
+    width: 0%;
+  }
+}
+
+.desc-container li.react::after {
+  animation-name: react;
+}
+
+@keyframes react {
+  to {
+    width: 0%;
+  }
+}
+
+/*  my skills section ends here  */
+
+/*  my team section strat here  */
+#my-team {
+  margin-top: 10px;
+  min-height: 500px;
+  padding: 5%;
+  color: #fff;
+  background: #111;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #222;
+  box-shadow: 2px 2px #222;
+  border-radius: 10px;
+}
+
+.mySlides img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid crimson;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: crimson !important;
+  border-radius: 10px !important;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: rgb(20, 20, 20);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: crimson;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.actives,
+.dot:hover {
+  background-color: #222;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+}
+
+/* Add a blue color to the author */
+.author {
+  color: cornflowerblue;
+}
+
+.carousel .cards-box {
+  border-radius: 6px;
+  padding: 25px 35px;
+  text-align: center;
+}
+
+.cards-box .boxs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* my team section ends here  */
+/* contact me strat here  */
+#contact-me {
+  margin-top: 10px;
+  min-height: 500px;
+  padding: 5%;
+}
+.column h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  color: #ff5200;
+}
+.column h3 {
+  color: crimson;
+}
+.column i {
+  color: #f05925;
+}
+.column address {
+  color: crimson;
+}
+
+/* contact me ends here  */
+
+/*  footer strat here   */
+
+/*  footer ends here   */
+/* Exatra Small devices(Phones 600px  and down) */
+@media only screen and (max-width: 550px) {
+  /*  home img strat here   */
+  #home::after {
+    opacity: 0.3;
+  }
+
+  .text-1 {
+    font-size: 0.9rem;
+    line-height: 2rem !important;
+    word-spacing: 0.7rem;
+    color: #fff !important;
+  }
+
+  .text-3 span {
+    font-size: 1.5rem;
+    color: #ff5200;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  /*  home img ends here   */
+  /*  login and sign up page strat here  */
+  /*  login page strat here  */
+  .login-form {
+    background-color: #ff5200 !important;
+  }
+
+  .sign-up-from {
+    background-color: #ff5200 !important;
+  }
+
+  .btns-from a {
+    color: #ffff;
+  }
+
+  .already-acount {
+    color: #ffffff !important;
+  }
+
+  /* login page ends here */
+  /* grallery strat here */
+  .photo-btn {
+    margin-top: 8px !important;
+  }
+
+  .counter h2 {
+    color: #ff5200 !important;
+  }
+
+  .counter i {
+    font-size: 2.5rem;
+    color: #ff5200;
+  }
+
+  /* grallery ends here */
+}
+
+/* medium devices landscape tablets,(Phones 768px  and dwon) */
+@media only screen and (min-width: 768px) {
+  /*  home img strat here   */
+  .text-1 {
+    font-size: 1rem;
+  }
+
+  /*  home img ends here   */
+  /*  login and sign up page strat here  */
+  /*  login page strat here  */
+  .login-form {
+    width: 450px;
+  }
+
+  /* tutorial strat here */
+  .card:hover {
+    box-shadow: 10px 10px 5px rgb(114, 113, 113);
+  }
+
+  .card-footer a {
+    font-size: 1.7rem;
+  }
+
+  #tutorial,
+  .project-work::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(330deg, #ff5200 55%, rgb(143, 13, 13) 0%);
+    z-index: -1;
+  }
+
+  /* tutorial ends here */
+}
+
+/* medium devices landscape tablets,(Phones 768px  and dwon) */
+
+/* Large devices laptops/desktops(Phones 992px  and dwon) */
+@media only screen and (min-width: 992px) {
+  /*  home img strat here   */
+  .text-1 {
+    font-size: 1.4rem !important;
+  }
+
+  /*  home img ends here   */
+  /*  login and sign up page strat here  */
+  /*  login page strat here  */
+  .login-form {
+    width: 500px;
+  }
+
+  /* tutorial strat here */
+  .card:hover {
+    box-shadow: 10px 10px 5px rgb(114, 113, 113);
+  }
+
+  .card-footer a {
+    font-size: 1.7rem;
+  }
+
+  #tutorial::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(330deg, #ff5200 55%, rgb(143, 13, 13) 0%);
+    z-index: -1;
+  }
+
+  /* tutorial ends here */
+}
+
+/*Extra Large devices  large laptops/desktops(Phones 1200px  and dwon) */
+@media (max-width: 1200px) {
+}
+
+#myBtn {
+  background: #222;
+  color: #ff5200;
+  border: 0;
+  font-size: 16px;
+  border-radius: 3px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+  z-index: 99;
+  cursor: pointer;
+  display: none;
+  outline: none;
+  box-shadow: 0 1px 5px rgb(68 73 83 / 20%);
+  -webkit-transition: all ease 0.238s;
+  -moz-transition: all ease 0.238s;
+  transition: all ease 0.238s;
+}
+
+#myBtn:hover {
+  background-color: crimson;
+  color: #fff;
+}
